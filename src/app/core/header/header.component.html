@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg " [ngClass]="myNavBar">
+    <div class="container-fluid mb-lg-0">
+      <a class="navbar-brand" href="#">
+        <img [src]="imgLogo" alt="logo-StarTech" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" (click)="toogleNavbar()" aria-controls="navbarToggleExternalContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-house-chimney"></i>Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink=""><i class="fa-solid fa-list-ul"></i>Offre d'emploi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink=""><i class="fa-solid fa-folder-open"></i> A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact/form"><i class="fa-solid fa-address-book"></i> Contact</a>
+          </li>
+          <p-button label="Secondary" [rounded]="true" severity="secondary" />
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
